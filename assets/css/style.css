@@ -7,8 +7,8 @@
     z-index: 5;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -64,7 +64,9 @@
     border-radius: 50%;
     padding: 10px;
     font-size: 20px;
-    box-shadow: 0px 0px 1px grey
+    box-shadow: 0px 0px 6px #ccc;
+    border:1px solid #ccc;    
+
 }
 
 /*end of menu styls*/
@@ -81,6 +83,26 @@
     left: 25px;
     box-shadow: 0px 0px 6px #ccc;
 
+}
+/*service section*/
+.service-section{
+    position: absolute;
+    background-color: white;
+    height: 70%;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    box-shadow: 0px 0px 6px #ccc;
+}
+.service{
+    padding: 10px;
+    color: #3333;
+    text-align: center;
+}
+
+.service p{
+    font-size: 20px !important;
+    color: #000
 }
 
 /*social section*/
@@ -107,7 +129,7 @@
 /*end of social section*/
 /*footer section*/
 .footer {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     right: 5px;
     bottom: 10px;
