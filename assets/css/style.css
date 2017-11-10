@@ -66,8 +66,7 @@
     border-radius: 50%;
     padding: 10px;
     font-size: 20px;
-    box-shadow: 0px 0px 6px #727272;
-    border:1px solid #727272;    
+    box-shadow: 0px 0px 10px #ccc;  
 
 }
 
@@ -80,9 +79,10 @@
     z-index: 2;
     background-color: white;
     width: 400px;
-    height: 85%;
-    top:10%;
-    left: 25px;
+    height: 70%;
+    top: 15%;
+    left: 5%;
+    right: 5%;
     box-shadow: 0px 0px 6px #ccc;
 
 }
@@ -144,6 +144,7 @@
     margin: 5px;
     height: 50px;
     width: 50px;
+     box-shadow: 0px 0px 6px #ccc;
 }
 .social-section ul li a {
     font-size: 18px;
@@ -158,6 +159,7 @@
     bottom: 10px;
     background-color: white;
     padding:15px;
+     box-shadow: 0px 0px 6px #ccc;
 }
 
 html, body {
