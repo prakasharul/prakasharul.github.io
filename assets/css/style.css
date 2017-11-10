@@ -25,20 +25,22 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #000;
     display: block;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #818181;
+    text-decoration: none;
 }
 
 .overlay .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
-    font-size: 60px;
+    right: 28px;
+    font-size: 30px;
 }
 
 @media screen and (max-height: 450px) {
@@ -56,7 +58,7 @@
     position: fixed;
     z-index:1;
     top: 25px;
-    right: 50px;
+    right: 20px;
     background-color: white;
     height:50px;
     width: 50px;
@@ -64,8 +66,8 @@
     border-radius: 50%;
     padding: 10px;
     font-size: 20px;
-    box-shadow: 0px 0px 6px #ccc;
-    border:1px solid #ccc;    
+    box-shadow: 0px 0px 6px #000;
+    border:1px solid #000;    
 
 }
 
@@ -105,7 +107,28 @@
     color: #000
 }
 
+.border-new{
+    border-bottom: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    border-top: none;
+    border-left: none;
+}
+.border-new:nth-child{
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
 /*social section*/
+@media screen and (max-width: 450px) {
+    .social-section {
+        position: fixed;
+        z-index: 2;
+        display: inline-block;
+        bottom:10px;
+        left: 10px;
+    }
+}
 .social-section {
     position: fixed;
     z-index: 2;
