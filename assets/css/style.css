@@ -193,3 +193,9 @@ html, body {
 .btn{
     border-radius: 0px !important;
 }
+
+
+/*map*/
+   #map {
+        height: 100%;
+      }
