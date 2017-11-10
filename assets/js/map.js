@@ -118,7 +118,7 @@
         // Create a map object, and include the MapTypeId to add
         // to the map type control.
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 55.647, lng: 37.581},
+          center: {lat: 13.0278788, lng: 80.1314007},
           zoom: 11,
           mapTypeControlOptions: {
             mapTypeIds: []
