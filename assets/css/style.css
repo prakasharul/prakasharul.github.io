@@ -99,7 +99,13 @@
     left: 5%;
     right: 5%;
     box-shadow: 0px 0px 6px #ccc;
+    overflow-y: scroll;
 
+}
+@media screen and (max-width: 450px) {
+    .contact-section{
+        width: auto;
+    }
 }
 /*service section*/
 .service-section{
@@ -134,6 +140,9 @@
     border-top: none;
     border-left: none;
 }
+.list-unstyled {
+    margin-bottom: 0px;
+}
 /*social section*/
 @media screen and (max-width: 450px) {
     .social-section {
@@ -142,25 +151,42 @@
         display: inline-block;
         bottom:10px;
         left: 10px;
+        width: 100%;
+
+    }
+   .social-section ul li {
+        text-align: center;
+        padding: 10px;
+        vertical-align: middle;
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0px 0px 6px #ccc;
+        display: inline-block;
     }
 }
-.social-section {
-    position: fixed;
-    z-index: 2;
-    max-width: 50px;
-    top:40%;
-    right: 10px;
+@media screen and (min-width: 450px) {
+    .social-section {
+        position: fixed;
+        z-index: 2;
+        right: 10px;
+        width: 50px;
+        top: 40%;
+    }
+    .social-section ul li {
+        text-align: center;
+        padding: 10px;
+        vertical-align: middle;
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0px 0px 6px #ccc;
+        display: block;
+    }
 }
-.social-section ul li {
-    text-align: center;
-    padding: 10px;
-    vertical-align: middle;
-    background-color: white;
-    margin: 5px;
-    height: 50px;
-    width: 50px;
-     box-shadow: 0px 0px 6px #ccc;
-}
+
+
+
 .social-section ul li a {
     font-size: 18px;
 }
@@ -173,7 +199,8 @@
     right: 5px;
     bottom: 10px;
     background-color: white;
-    padding:15px;
+    height: 50px;
+    padding:10px;
      box-shadow: 0px 0px 6px #ccc;
 }
 
