@@ -70,6 +70,21 @@
 
 }
 
+.logo{
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top:25px;
+    color: white
+}
+.logo a{
+    color: white;
+}
+ .logo span {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Sonsie One', cursive;
+ }
 /*end of menu styls*/
 
 

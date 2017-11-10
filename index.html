@@ -15,11 +15,23 @@
     <script type="text/javascript" src="assets/js/overlay.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" ></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIWoBGMSuVfCGAEou0U4ptz1t6AFsI9dQ&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="assets/js/map.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sonsie+One" rel="stylesheet">
   </head>
   <body>
+    <!-- logo section -->
+    <div class="logo" >
+     <a href="">
+        <i class="fa fa-3x fa-code"></i>
+      <span style="">CodeLife</span>
+     </a>
+    </div>
+    <!-- end of logo section -->
     <!-- menu section -->
-    <span class="menu" onclick="openNav()"><i class="fa fa-bars"></i></span> 
+    <span class="menu" onclick="openNav()"><i class="fa fa-bars"></i></span>
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
@@ -30,7 +42,6 @@
       </div>
     </div>
     <!-- end of menu section -->
-
     <!-- slider section -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -51,7 +62,6 @@
       </div>
     </div>
     <!-- slider section -->
-
     <!-- social section -->
     <div class="social-section" style="">
       <ul class="list-unstyled">
