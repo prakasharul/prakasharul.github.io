@@ -15,7 +15,18 @@
     <script type="text/javascript" src="assets/js/overlay.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" ></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    
+    <script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.508742, -0.120850),
+    zoom: 5
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKh02_j9BESMBpUTJyFzguKMI84_6tpfI&callback=myMap"></script>
   </head>
   <body>
     <!-- menu section -->
@@ -24,7 +35,7 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
         <a href="index.html">Home</a>
-        <a href="#">About</a>
+        <a href="about.html">About</a>
         <a href="service.html">Services</a>
         <a href="contact.html">Contact</a>
       </div>
@@ -33,7 +44,8 @@
     
     <!-- map section -->
     <div class="map-frame">
-      <iframe src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=13.0231288,80.1326493&amp;t=m&amp;z=4&amp;output=embed" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
+     <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1222837335076!2d80.13140071527489!3d13.027884017164597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260525b2420fd%3A0x4a96534ee5e48376!2sFreelancers!5e0!3m2!1sen!2sin!4v1510294622914&zoom=17" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+     <div id="map" style="width:100%;height:500px"></div>
     </div>
     <!-- end of map sections -->
     
