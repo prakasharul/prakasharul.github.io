@@ -150,7 +150,7 @@ a{
   margin-bottom: 0px;
 }
 /*social section*/
-@media only screen and (min-width: 768px) {
+@media screen and (max-width: 450px) {
   .social-section {
     position: fixed;
     z-index: 2;
