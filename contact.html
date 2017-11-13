@@ -49,7 +49,7 @@
   <!-- end of menu section -->
   <!-- header section -->
   <div class="header d-block d-lg-none d-xl-none d-md-none" style="background-color:#000;z-index:-1">
-    <img class="d-block w-100" src="https://www.tapcorporate.com/-/media/Corporate/Homepage/bem-vindo-tap-corporate-bb.jpg?h=850&w=1600&la=en-US&hash=3E876BE306CB97BEF9FAB9C31EF22672DF70E15A"style="opacity:.34">
+        <img class="img-responsive" src="https://thinknowresearch.com/wp-content/uploads/2017/04/pexels-photo-348323.jpg" alt="App devlopment" style="opacity:.34;width:100%;height:100%">
   </div>
   <!-- end of header section -->
   <!-- map section -->
@@ -59,7 +59,7 @@
 
   <div class="contact-section">
     <!-- address -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top:15px">
       <p><strong>Address:</strong><br /> #114, 4th street,kesavarthini nagar, iyyapanthagal, chennai-600 122</p>
       <p><strong>Mobile:</strong> <a href="tel:9176953336">+91-9176953336</a></p>
       <p><strong>E-Mail:</strong> <a href="mailto:prakasharul94@gmail.com">prakasharul94@gmail.com</a></p>
@@ -67,23 +67,20 @@
 
       <!-- contact form sectiom -->
       <strong>Contact</strong>
-      <form method="post" action="">
+      <form method="post" action="https://formspree.io/prakasharul94@gmail.com">
 
         <div class="form-group">
-          <input type="text" name="" class="form-control form-control-sm" placeholder="Name">
+          <input type="text" name="name" class="form-control form-control-sm" placeholder="Name">
         </div>
         <div class="form-group">
-          <input type="text" name="" class="form-control form-control-sm" placeholder="Email">
+          <input type="text" name="_replyto" class="form-control form-control-sm" placeholder="Email">
         </div>
-        <select class="form-control form-control-sm">
-          <option>Select Service</option>
-          <option>Comments</option>
-          <option>Apply</option>
-        </select>
         <div class="form-group">
-          <textarea class="form-control form-control-sm" placeholder="Comments"></textarea>
+          <textarea class="form-control form-control-sm" placeholder="Comments" name="message"></textarea>
         </div>
-        <input type="submit" class="btn text-white bg-dark" name="">
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <input type="submit" class="btn text-white bg-dark" name="Send">
       </form>
       <br>
     </div>
