@@ -109,10 +109,12 @@ a:hover{
   z-index: 1;
   left: 20px;
   top:25px;
-  color: white
+  color: white;
+  text-shadow: 1px 1px #2b2a2a;
 }
 .logo a{
   color: white !important;
+  text-shadow: 1px 1px #2b2a2a;
 }
 .logo:hover{
   text-decoration: none;
@@ -121,6 +123,7 @@ a:hover{
   font-size: 25px;
   font-weight: 700;
   font-family: 'Sonsie One', cursive;
+  text-shadow: 1px 1px #2b2a2a;
 }
 /*end of menu styls*/
 
@@ -141,7 +144,7 @@ a:hover{
   top: 15%;
   left: 5%;
   right: 5%;
-  background-color: #00000047;
+  background-color: #000000c7;
   box-shadow: 1px 1px 6px #000000;
   color: #fff;
   overflow-y: auto;
