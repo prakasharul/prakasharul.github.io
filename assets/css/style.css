@@ -7,6 +7,7 @@ html{
 body{
   background-color: #f2f2f2 !important;
   font-family: 'Roboto', sans-serif !important;
+  overflow-x: hidden;
 }
 
 .site-heading{
@@ -52,20 +53,35 @@ body{
 }
 
 .footer{
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%
-
+  padding: 10px 0;
 }
+
 .footer a{
     color:#212529;
     font-weight: bold;
 }
+@media (min-width: 767px) {
+  .footer{
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    max-width: 100%
+  }
+
+}
+
+
 @media (max-width: 767px) {
 
   /* Align text to center.*/
   .text-xs-center {
     text-align: center;
   } 
+
 }
+
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev    { left: -25%; }
+.carousel-control        { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
