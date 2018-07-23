@@ -97,3 +97,11 @@ h1{
     line-height: inherit;
 
 }
+
+.card-content{
+  background-color: #E91E63;
+  font-weight:bold;
+  color: #fff;
+  padding: 7px !important;
+  text-align: center;
+}
