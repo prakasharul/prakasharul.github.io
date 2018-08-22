@@ -6,7 +6,8 @@ layout : blog
 <ul>
 	{% for post in site.posts %}
 	<li>
-		<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+		<a href="{{site.baseurl}}{{post.url}}"><h4>{{post.title}}</h4></a>
+		<span>{{post.author}}</span> . <span>{{post.category}}</span>.<span>{{post.created_at}}</span>
 	</li>
 	{% endfor%}
 </ul>
