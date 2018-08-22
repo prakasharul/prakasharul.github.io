@@ -17,7 +17,8 @@ title: Codelife
 email: prakasharul94@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   codelife is initiated at the dawn of 21st  century
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "prakasharul.github.io" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 twitter_username: jekyllrb
