@@ -94,12 +94,12 @@ body {
 /**/
 
 .carousel {
-    height: 500px;
+    height: 450px;
 }
 
 .carousel .carousel-item{
     max-width: 300px;
-    height: 400px;
+    max-height: 400px;
 }
 
 .list-inline {
@@ -124,7 +124,7 @@ h1 {
     font-weight: bold;
     color: #000;
     padding: 7px !important;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .card-content p {
