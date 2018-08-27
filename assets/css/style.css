@@ -94,7 +94,12 @@ body {
 /**/
 
 .carousel {
-    height: 360px;
+    height: 500px;
+}
+
+.carousel .carousel-item{
+    max-width: 300px;
+    height: 400px;
 }
 
 .list-inline {
