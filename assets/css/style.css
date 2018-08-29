@@ -75,3 +75,36 @@ h1{margin:0px;line-height:inherit;}
    ./*input-field .prefix.active {
      color: #000;
    }*/
+
+   .vert-middle{
+    vertical-align: super;
+   }
+   .material-icons{
+    vertical-align: middle;
+   }
+   .post-title{
+    margin: 0px;
+    font-size: 24px;
+    text-transform: initial;
+    margin-bottom: 10px
+   }
+   .post-option {
+    margin: 0px;
+    text-align: left;
+    font-size: 12px;
+
+   }
+   .post-option i {
+    font-size: 18px;
+   }
+   .post-option li {
+      padding-right:15px;
+      color: grey;
+   }
+
+   .parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    background-color: #000;
+    opacity: .8;

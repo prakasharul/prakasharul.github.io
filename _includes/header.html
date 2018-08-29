@@ -22,18 +22,18 @@
 		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/jquery.wordrotator.css">
 		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/animate.css">
 	</head>
-	<body class="{{ include.bodybg }}">
+	<body class="{{  }}"><!-- include.bodybg -->
 		<div class="container-fluid">
 			
 			<!-- header section -->
-			<div class="row">
+			<div class="row {{include.bodybg}}" style="margin-bottom: 0px;">
 				<div class="col l9 m8 s12">
 					<h1 class="site-heading s1-8x text-xs-center"><a href="{{site.baseurl}}/" class="color-black">Codelife</a></h1>
 				</div>
 				<div class="col l3 m4 s12">
-					<ul class="list-inline text-lg-right text-md-right text-sm-right text-xs-center right-align">
+					<ul class="list-inline text-lg-right text-md-right text-sm-right text-xs-center right-align"  >
 						<!-- <li class="list-inline-item"><a href="{{site.baseurl}}/about/">About </a></li> -->
-						<!-- <li class="list-inline-item"><a href="{{site.baseurl}}/blog/" class="color-black">Blog </a></li> -->
+						<li class="list-inline-item" style="vertical-align: -webkit-baseline-middle;"><a href="{{site.baseurl}}/blog/" class="color-black">Blog </a></li>
 						<!-- <li class="list-inline-item"><a href="{{site.baseurl}}/contact" class="color-black">Contact </a></li> -->
 					</ul>
 					

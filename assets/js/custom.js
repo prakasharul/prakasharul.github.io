@@ -13,3 +13,6 @@ $(document).ready(function() {
 					animationOut: "rotateOutDownLeft"
 				});
 });
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });

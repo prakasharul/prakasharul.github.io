@@ -2,36 +2,47 @@
 layout: blog
 ---
 <title>{{page.title}}</title>
-    <!-- You can use Open Graph tags to customize link previews.
-    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-  <meta property="og:url"           content="{{page.url}}" />
-  <meta property="og:type"          content="{{site.baseurl}}" />
-  <meta property="og:title"         content="{{site.title}}" />
-  <meta property="og:description"   content="{{site.description}}" />
-  <meta property="og:image"         content="{{page.image}}" />
-
-
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+<!-- You can use Open Graph tags to customize link previews.
+Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+<meta property="og:url"           content="{{page.url}}" />
+<meta property="og:type"          content="{{site.baseurl}}" />
+<meta property="og:title"         content="{{site.title}}" />
+<meta property="og:description"   content="{{site.description}}" />
+<meta property="og:image"         content="{{page.image}}" />
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 </script>
-
- 
-  <div class="container-fluid">
-  	<h1>{{page.title}}</h1>
-  	 <!-- Your share button code -->
-  <div class="fb-share-button" 
-    data-href="{{page.url}}" 
-    data-layout="button_count">
+<div class="parallax-container">
+  <div class="parallax">
+    {% if page.media %}
+    <img src="{{page.media}}"></div>
+    {% else %}
+    <img src="https://materializecss.com/images/parallax1.jpg"></div>
+    {% endif %}
+</div>
+<div class="container" style="margin-top:-5%">
+  
+<div class="card">
+  <div class="card-content" style="padding: 20px;">
+    <h1 style="font-size: 2rem">{{page.title}}</h1>
+    <ul class="list-inline post-option">
+              <li class=""><i class="material-icons">person_outline</i> {{page.author}}</li>
+              <li><i class="material-icons">format_list_bulleted</i> {{page.category}}</li>
+              <li><i class="material-icons">access_time</i> {{page.created_at}}</li>
+            </ul>
+    <!-- <div class="fb-share-button"
+      data-href="{{page.url}}"
+      data-layout="button_count">
+    </div> -->
+    <br>
+      <p>{{content}}</p>
+      {% include share.html %}
   </div>
-	{{content}}
-
-{% include share.html %}
-
-  </div>
-
+</div>
+</div>

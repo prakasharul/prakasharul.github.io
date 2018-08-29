@@ -1,13 +1,27 @@
 ---
 layout : blog
 ---
-
-
-<ul>
+<div class="container">
+	<br>
 	{% for post in site.posts %}
-	<li>
-		<a href="{{site.baseurl}}{{post.url}}"><h4>{{post.title}}</h4></a>
-		<span>{{post.author}}</span> . <span>{{post.category}}</span>.<span>{{post.created_at}}</span>
-	</li>
+		<a href="{{site.baseurl}}{{post.url}}">
+			<div class="card horizontal">
+				<div class="card-image" style="height:200px;width:300px;background-color: #f2f2f2;background-image: url('{{post.media}}');background-size: contain;background-repeat: no-repeat;background-position: center;">
+					
+				</div>
+				<div class="card-stacked">
+					<div class="card-content">
+						<h5 class="post-title">{{post.title}}</h5>
+						<ul class="list-inline post-option">
+							<li class=""><i class="material-icons">person_outline</i> {{post.author}}</li>
+							<li><i class="material-icons">format_list_bulleted</i> {{post.category}}</li>
+							<li><i class="material-icons">access_time</i> {{post.created_at}}</li>
+						</ul>
+						<br>
+						<p>{{post.content}}</p>
+					</div>
+				</div>
+			</div>
+		</a>
 	{% endfor%}
-</ul>
+</div>
