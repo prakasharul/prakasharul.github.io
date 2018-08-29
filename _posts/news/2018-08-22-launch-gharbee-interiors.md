@@ -8,5 +8,5 @@ media: http://gharbee.com/wp-content/uploads/2018/05/Gharbee-logo.png
 
 ---
 
-Codelife proudly anouces that view published news website  for gharbee interiors.
+Codelife proudly announces that view published news website  for gharbee interiors.
 which is about interior.
